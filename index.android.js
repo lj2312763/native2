@@ -13,8 +13,8 @@ import List from './Component/List/List';
 import MyImage from './Component/Image/MyImage';
 // import Hello from './Component/Hello'
 // import MyKeybord from './Component/MyKeyboard/MyKeybord';
+import BaiduMap from './BaiduMapDemo'
 
-console.log(MyImage.examples)
 
 export default class native2 extends React.Component {
     // constructor(props) {
@@ -28,23 +28,22 @@ export default class native2 extends React.Component {
         return (
             <ScrollView style={{padding: 20}}>
                 <View style={styles.container}>
-                    <List/>
-                    <Hello/>
-                    <MyDatePicker/>
-                    <MyImage/>
-                    <Button accessibilityLabel='accessibilityLabel ' color="red" disabled={false} title="登陆"
-                            onPress={this._onButtonPress}/>
-                    <Text style={styles.welcome}>
-                        Welcome to React Native!
-                    </Text>
-                    <TextInput/>
-                    <Text style={styles.instructions}>
-                        To get started, edit index.android.js
-                    </Text>
-                    <Text style={styles.instructions}>
-                        Double tap R on your keyboard to reload,{'\n'}
-                        Shake or press menu button for dev menu
-                    </Text>
+                    {/*<Hello/>*/}
+                    {/*<MyDatePicker/>*/}
+                    <BaiduMap />
+                    {/*<Button accessibilityLabel='accessibilityLabel ' color="red" disabled={false} title="登陆"*/}
+                            {/*onPress={this._onButtonPress}/>*/}
+                    {/*<Text style={styles.welcome}>*/}
+                        {/*Welcome to React Native!*/}
+                    {/*</Text>*/}
+                    {/*<TextInput/>*/}
+                    {/*<Text style={styles.instructions}>*/}
+                        {/*To get started, edit index.android.js*/}
+                    {/*</Text>*/}
+                    {/*<Text style={styles.instructions}>*/}
+                        {/*Double tap R on your keyboard to reload,{'\n'}*/}
+                        {/*Shake or press menu button for dev menu*/}
+                    {/*</Text>*/}
                 </View>
             </ScrollView>
         );
